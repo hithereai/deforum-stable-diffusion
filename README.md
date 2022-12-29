@@ -24,24 +24,23 @@ If you are having problems with installng git via Anaconda, please use the follo
 [git for Linux](https://git-scm.com/download/linux)
 
 ### Getting Started
-1. Open anaconda Prompt-CLI (on Windows) or terminal (on Linux) and navigate to your desired installation folder
-2. Clone the github repository and navigate to it:
+1. Open anaconda Prompt-CLI (on Windows) or Terminal (on Linux) and navigate to your desired installation folder
+2. Clone this github repository and navigate to it:
 ```
 git clone https://github.com/deforum-art/deforum-stable-diffusion.git
 cd deforum-stable-diffusion
-
 ```
-3. create a suitable anaconda environmentfor Deforum, activate it, and install Pytorch:
+3. Create a suitable anaconda environmentfor Deforum, activate it, and install Pytorch:
 ```
 conda create -n deforum python=3.10.6
 conda activate deforum
 pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
-4. install required packages:
+4. Install required packages:
 ```
 python -m pip install -r requirements.txt
 ```
-5. check your installation by running the .py:
+5. Check your installation by running the .py file:
 ```
 python Deforum_Stable_Diffusion.py
 ```
