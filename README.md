@@ -11,65 +11,62 @@
 
 ### Before you start
 - Create a huggingface account, to get the token which you will need for auto model download: https://huggingface.co/settings/tokens
-- Install ffmpeg, and make sure it's in your PATH by running ```bash ffmpeg -h```
-### Running on Windows 
-
-- install anaconda for managing python environments and packages https://www.anaconda.com/
-
-- install ffmpeg https://ffmpeg.org/download.html
-- install git for your system. you can install git with anaconda:
+- Install ffmpeg, and make sure it's in your PATH by opening running ```bash ffmpeg -h``` in your Windows CMD/ Linux Terminal. If you don't get an error you're good. 
+- Install anaconda for managing python environments and packages https://www.anaconda.com/
+- Install git for your system if you don't already have it installed. Easiest way is to open an Anaconda Prompt (CLI) and type:
 ```
 conda install -c anaconda git -y
-
 ```
-
-### Running on Linux 
-
-## Getting Started
-1. open anaconda powershell (on Windows) or terminal (Linux) and navigate to install location
-2. clone the github repository:
+If you are having problems with installng git via Anaconda, please use the following links instead:
+```
+[git for Windows](https://git-scm.com/download/win)
+[git for Linux](https://git-scm.com/download/linux)
+```
+### Getting Started
+1. Open anaconda Prompt-CLI (on Windows) or terminal (on Linux) and navigate to your desired installation folder
+2. Clone the github repository and navigate to it:
 ```
 git clone https://github.com/deforum-art/deforum-stable-diffusion.git
 cd deforum-stable-diffusion
 
 ```
-3. create anaconda environment:
+3. create a suitable anaconda environmentfor Deforum, activate it, and install Pytorch:
 ```
-conda create -n dsd python=3.10 -y
-conda activate dsd
-conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia -y
-
+conda create -n deforum python=3.10.6
+conda activate deforum
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 4. install required packages:
 ```
 python -m pip install -r requirements.txt
-
 ```
-5. check your installation by running the .py
+5. check your installation by running the .py:
 ```
 python Deforum_Stable_Diffusion.py
-
 ```
-you have successfully installed deforum stable diffusion if the python file runs without any errors.
+You have successfully installed deforum stable diffusion if the python file runs without any errors.
 
 ## Starting Over
-the stable-diffusion folder can be deleted and the dsd conda environment can be removed with the following set of commands:
+The stable-diffusion folder can be deleted and the dsd conda environment can be removed with the following set of commands:
 ```
 conda deactivate
-conda env remove -n dsd
+conda env remove -n deforum
 
 ```
-with the dsd environment removed you can start over.
+With the deforum environment removed you can start over.
 
 
 ## Running Deforum Stable Diffusion
-there are four ways to run deforum stable diffusion: locally with the .py file, locally with jupyter, locally through colab, and on colab severs
+There are four ways to run deforum stable diffusion:
+- Locally through colab Local runtime
+- Online using colab servers and GPUs. 
+- Locally with the .py file (not recommended)
+- Locally with jupyter (not recommended)
 
 ### Running Locally
-make sure the dsd conda environment is active:
+make sure the deforum conda environment is active:
 ```
 conda activate dsd
-
 ```
 navigate to the stable-diffusion folder and run either the Deforum_Stable_Diffusion.py or the Deforum_Stable_Diffusion.ipynb. running the .py is the quickest and easiest way to check that your installation is working, however, it is not the best environment for tinkering with prompts and settings
 ```
