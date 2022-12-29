@@ -18,7 +18,9 @@
 conda install -c anaconda git -y
 ```
 If you are having problems with installng git via Anaconda, please use the following links instead:
+
 [git for Windows](https://git-scm.com/download/win)
+
 [git for Linux](https://git-scm.com/download/linux)
 
 ### Getting Started
