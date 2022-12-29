@@ -11,13 +11,14 @@
 
 ### Before you start
 - Create a [huggingface](https://huggingface.co/settings/tokens) account, to get the token which you will need for auto model download.
-- Install [ffmpeg](https://ffmpeg.org/download.html), and make sure it's in your PATH by opening running ```bash ffmpeg -h``` in your Windows CMD/ Linux Terminal. If you don't get an error you're good. 
+- Install [ffmpeg](https://ffmpeg.org/download.html), and make sure it's in your PATH by running ```bash ffmpeg -h``` in your Windows CMD/ Linux Terminal. If you don't get an error you're good. 
 - Install [anaconda](https://www.anaconda.com/) for managing python environments and packages
 - Install git for your system if you don't already have it installed. Easiest way is to open an Anaconda Prompt (CLI) and type:
 ```
 conda install -c anaconda git -y
 ```
 If you are having problems with installng git via Anaconda, please use the following links instead:
+
 [git for Windows](https://git-scm.com/download/win)
 [git for Linux](https://git-scm.com/download/linux)
 
