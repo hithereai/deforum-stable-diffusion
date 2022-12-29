@@ -9,16 +9,21 @@
     <a href="https://colab.research.google.com/github/deforum-art/deforum-stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb"><img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a>  
 </p>
 
-## Before You Start
-- make sure you have the latest nvidia drivers for cuda 11.6 https://developer.nvidia.com/cuda-toolkit-archive
+### Before you start
+- Create a huggingface account, to get the token which you will need for auto model download: https://huggingface.co/settings/tokens
+- Install ffmpeg, and make sure it's in your PATH by running ```bash ffmpeg -h```
+### Running on Windows 
+
 - install anaconda for managing python environments and packages https://www.anaconda.com/
-- create a huggingface token which you will need for auto model download: https://huggingface.co/settings/tokens
+
 - install ffmpeg https://ffmpeg.org/download.html
 - install git for your system. you can install git with anaconda:
 ```
 conda install -c anaconda git -y
 
 ```
+
+### Running on Linux 
 
 ## Getting Started
 1. open anaconda powershell (on Windows) or terminal (Linux) and navigate to install location
