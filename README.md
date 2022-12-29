@@ -18,10 +18,9 @@
 conda install -c anaconda git -y
 ```
 If you are having problems with installng git via Anaconda, please use the following links instead:
-```
 [git for Windows](https://git-scm.com/download/win)
 [git for Linux](https://git-scm.com/download/linux)
-```
+
 ### Getting Started
 1. Open anaconda Prompt-CLI (on Windows) or terminal (on Linux) and navigate to your desired installation folder
 2. Clone the github repository and navigate to it:
